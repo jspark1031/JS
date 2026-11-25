@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>🤓숙제용 계산기</title>
+    <script src="caculator.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        #container {
+            display: grid;
+            gap: 0.5rem;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(4, 200px);
+
+            grid-template-areas:
+                "img1 img5 img5"
+                "img1 img2 img4"
+                "img3 img3 img4"
+                "img6 img6 img6"
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0.8rem
+        }
+        .img1{
+            grid-area: img1;   
+        }
+        .img2{
+            grid-area: img2;   
+        }
+        .img3{
+            grid-area: img3;   
+        }
+        .img4{
+            grid-area: img4;   
+        }
+        .img5{
+            grid-area: img5;   
+        }
+        .img6{
+            grid-area: img6;   
+        }
+
+        #container:hover img:not(:hover) {
+            filter: grayscale(1);
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>✨최신식 콘솔창 계산기✨<i class="fa-solid fa-calculator"></i></h1>
+        <div class="win-box">
+    <h3 class="win-case"><i class="fa-brands fa-windows"></i> Window OS의 경우</h3>
+    </div>
+    <hr>
+    <p>1. F12 키를 눌러 콘솔 창을 여세요.</p>
+    <p>2. start()를 콘솔창에 입력하여 계산기를 실행합니다.</p>
+    <div class="mac-box">
+    <h3 class="mac-case"><i class="fa-brands fa-apple"></i> Mac OS의 경우</h3>
+    </div>
+    <hr>
+    <p>1. Option + Command + i 키를 눌러 콘솔 창을 여세요.</p>
+    <p>2. start()를 콘솔창에 입력하여 계산기를 실행합니다.</p>
+    <br>
+    <p>🐹계산에 앞서 귀여운 쥑쥑이들 구경하세요.🐹</p>
+
+    <div id="container">
+    <div class="item img1"><img src="https://images.unsplash.com/photo-1725522908781-3738eb43e031?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt=""></div>
+    <div class="item img2"><img src="https://plus.unsplash.com/premium_photo-1695410444705-ed7c2c712a5f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt=""></div>
+    <div class="item img3"><img src="https://plus.unsplash.com/premium_photo-1695410374501-43ba3c8ebca4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt=""></div>
+    <div class="item img4"><img src="https://images.unsplash.com/photo-1721327900409-2393c686bc48?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt=""></div>
+    <div class="item img5"><img src="https://plus.unsplash.com/premium_photo-1664299039106-2d519534d0a5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt=""></div>
+    <div class="item img6"><img src="https://plus.unsplash.com/premium_photo-1661923719925-55775ab53420?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt=""></div>
+
+    </div>
+</body>
+</html>
